@@ -4,3 +4,42 @@
 
 {% block header_title %}Autentication{% endblock %}
 {% block header_title %}Register{% endblock %}
+
+{% block content%}
+<div class="container">
+    <h2>Formulario de Registro</h2>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{form.name.label}}
+            {{ form.name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{form.last_name.label}}
+            {{ form.last_name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{form.email.label}}
+            {{ form.email(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{form.password.label}}
+            {{ form.password(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{form.phone.label}}
+            {{ form.phone(class="form-control") }}
+        </div>
+        <hr>
+        {{ form.is_married.label }}
+        {{ form.ir_married }}
+        <hr>
+        {{ form.gender.label}}
+        <div class="btn-group mb-3">
+            {{ form.gender(class="custom-select") }}
+        </div>    
+        {{ form.submit(class="btn btn-primary") }}
+        <a type="button" class="btn btn-secondary" href="{{ url_for('login') }}">Login</a>
+    </form>
+</div>
+{% endblock %}

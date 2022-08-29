@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\ZXS\Desktop\consola\webPersonalflaskLud\venv"
+VIRTUAL_ENV="C:\Users\Lety\Downloads\ProyectoFlaskLud\webPersonalflaskLud\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
