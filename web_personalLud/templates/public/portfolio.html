@@ -2,16 +2,14 @@
 
 {% block title %}Acerca de{% endblock %}
 
-{% block content %} 	
-
 {% block header_img %}{{ url_for('static', filename='img/portfolio-bg.jpg') }}{% endblock %}
 {% block header_title %}Portfolio{% endblock %}
 {% block header_sub %}Curriculo{% endblock %}
 
+{% block content %}
 	    <!-- Contenido Principal -->
 	    <div class="container">
 	      <!-- Proyecto -->
-		  {{ projects }}
 		  {% for project in projects %}
 	      <div class="row project">  	
 	      	<div class="col-lg-3 col-md-4 offset-lg-1">

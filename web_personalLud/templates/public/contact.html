@@ -1,13 +1,12 @@
-{% extends 'public/base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}Contacto{% endblock %}
 
-{% block content %} 
-
-    {% block header_img %}{{ url_for('static', filename='img/contact-bg.jpg') }}{% endblock %}
+{% block header_img %}{{ url_for('static', filename='img/contact-bg.jpg') }}{% endblock %}
 {% block header_title %}contacto{% endblock %}
 {% block header_sub %}Asesoria{% endblock %}
 
+{% block content %}
     <!-- Contenido Principal -->
     <div class="container">
       <div class="row">
